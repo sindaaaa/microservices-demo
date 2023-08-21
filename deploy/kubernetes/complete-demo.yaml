@@ -805,14 +805,14 @@ spec:
           httpGet:
             path: /health
             port: 80
-          initialDelaySeconds: 600
+          initialDelaySeconds: 300
           periodSeconds: 3
           timeoutSeconds: 10
         readinessProbe:
           httpGet:
             path: /health
             port: 80
-          initialDelaySeconds: 300
+          initialDelaySeconds: 180
           periodSeconds: 3
           timeoutSeconds: 10
       nodeSelector:
